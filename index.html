@@ -68,6 +68,28 @@
       .grid-3{grid-template-columns:1fr}
       form{grid-template-columns:1fr}
       textarea,.submit{grid-column:1}
+      .panel img.hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;         /* crops nicely */
+  border-radius: 12px;       /* matches panel rounding */
+        .center { text-align: center; }
+.grid-3 { justify-items: center; }            /* centers the cards */
+.card { max-width: 360px; }                   /* gives a nice readable line-length */
+.kpis { justify-items: center; }
+        .bgfx {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 600px at 80% -10%, rgba(56,189,248,.18), transparent 40%),
+    radial-gradient(700px 500px at -10% 110%, rgba(16,185,129,.14), transparent 45%);
+  pointer-events: none;       /* <— lets clicks pass through */
+  z-index: 0;                 /* optional: ensure it’s behind */
+}
+
+
+}
     }
   </style>
 </head>
@@ -106,7 +128,7 @@
     </div>
   </section>
 
-  <section id="about" class="wrap">
+  <section id="about" class="wrap center">
     <h2 style="margin:0 0 10px;font-size:24px;">About Arza.AI</h2>
     <p class="subtle">Our mission is to make one of life’s biggest decisions simpler, clearer, and more personalized — by pairing modern AI with transparent, compliant data use.</p>
     <div class="kpis">
@@ -116,7 +138,7 @@
     </div>
   </section>
 
-  <section id="why" class="wrap">
+  <section id="why" class="wrap center">
     <h2 style="margin:0 0 10px;font-size:24px;">Why choose us</h2>
     <div class="grid-3">
       <div class="card">
@@ -134,7 +156,7 @@
     </div>
   </section>
 
-  <section id="contact" class="wrap">
+  <section id="contact" class="wrap center">
     <h2 style="margin:0 0 10px;font-size:24px;">Contact</h2>
     <p class="subtle">Questions, partnerships, or early access? Send us a note.</p>
     <!-- Formspree starter (replace with your endpoint when ready) -->
