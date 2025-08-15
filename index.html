@@ -34,60 +34,6 @@
       background:linear-gradient(135deg,var(--accent),#22c55e);color:#001b10;font-weight:700;border:1px solid rgba(16,185,129,.35)}
     .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
     .hero{position:relative;overflow:hidden}
-    .hero {
-  position: relative;
-  overflow: hidden;
-  min-height: 400px;
-  41|   41|   background: var(--bg);
-42|   /* display: flex;
-43|   align-items: center;
-44|   justify-content: center; */
-45| }.hero-content-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  padding: 60px 20px;
-}
-.hero-content-text {
-  max-width: 500px;
-  text-align: left;
-}
-.hero-content-img {
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-}
-@media (max-width: 900px) {
-  .hero-content-flex { flex-direction: column; align-items: center; }
-  .hero-content-text { text-align: center; }
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 80px 20px;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-  color: white;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-@media (max-width: 900px){
-  .hero {
-    min-height: 300px;
-    padding: 40px 0;
-  }
-  .hero-content {
-    padding: 40px 10px;
-  }
-}
     .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:72px 20px}
     .bgfx{position:absolute;inset:0;background:
       radial-gradient(900px 600px at 80% -10%,rgba(56,189,248,.18),transparent 40%),
@@ -162,22 +108,25 @@
     </div>
   </header>
 
- 143|  <section class="hero" aria-labelledby="hero-title">
-144|   <div class="bgfx" aria-hidden="true"></div>
-145|   <div class="wrap hero-content-flex">
-146|     <div class="hero-content-text">
-147|       <span class="badge">Coming soon</span>
-148|       <h1 id="hero-title">Smarter ways to find your next home.</h1>
-149|       <p class="big">We’re building AI-powered technology that understands what matters to each person and delivers relevant listings with clear explanations — helping buyers, renters, and more to make confident decisions.</p>
-150|       <div class="cta">
-151|         <a class="btn" href="#contact">Get in touch</a>
-152|         <a class="btn ghost" href="mailto:hello@arza-ai.com">Email us</a>
-153|       </div>
-154|       <div class="cred" aria-label="credibility"></div>
-155|     </div>
-156|     <img src="Hero-tech.png" alt="Tech visual" class="hero-content-img" />
-157|   </div>
-158| </section>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="bgfx" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <span class="badge">Coming soon</span>
+        <h1 id="hero-title">Smarter ways to find your next home.</h1>
+        <p class="big">We’re building AI-powered technology that understands what matters to each person and delivers relevant listings with clear explanations — helping buyers, renters, and investors make confident decisions.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="mailto:hello@arza-ai.com">Email us</a>
+        </div>
+        <div class="cred" aria-label="credibility">
+        </div>
+      </div>
+     <div class="panel">
+  <img class="hero-img" src="Hero-tech.jpg" alt="ARZA.AI—innovative real-estate tech preview">
+</div>
+    </div>
+  </section>
 
   <section id="about" class="wrap center">
     <h2 style="margin:0 0 10px;font-size:24px;">About Arza.AI</h2>
