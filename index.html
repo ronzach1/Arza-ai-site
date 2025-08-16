@@ -101,6 +101,20 @@
   form{grid-template-columns:1fr}
   textarea,.submit{grid-column:1}
 }
+    /* three cards in a row (desktop) */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  justify-items: center;   /* center each card inside the cell */
+}
+
+/* card width for readability */
+.card {
+  max-width: 360px;
+  width: 100%;
+}
+
       .panel img.hero-img {
   width: 100%;
   height: 100%;
