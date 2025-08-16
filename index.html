@@ -93,6 +93,16 @@
     form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#0c1526;color:var(--text)}
     textarea{min-height:120px;grid-column:1 / span 2}
+      .bgfx {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 600px at 80% -10%, rgba(56,189,248,.18), transparent 40%),
+    radial-gradient(700px 500px at -10% 110%, rgba(16,185,129,.14), transparent 45%);
+  pointer-events: none;       /* <— lets clicks pass through */
+  z-index: 0;                 /* optional: ensure it’s behind */
+}
+
     .submit{grid-column:1 / span 2;justify-self:flex-start}
     footer{padding:28px 0;color:var(--muted);border-top:1px solid var(--border);margin-top:24px}
    @media (max-width: 900px){
@@ -125,16 +135,6 @@
 .grid-3 { justify-items: center; }            /* centers the cards */
 .card { max-width: 360px; }                   /* gives a nice readable line-length */
 .kpis { justify-items: center; }
-        .bgfx {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(900px 600px at 80% -10%, rgba(56,189,248,.18), transparent 40%),
-    radial-gradient(700px 500px at -10% 110%, rgba(16,185,129,.14), transparent 45%);
-  pointer-events: none;       /* <— lets clicks pass through */
-  z-index: 0;                 /* optional: ensure it’s behind */
-}
-
 
 }
     }
