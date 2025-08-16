@@ -50,6 +50,25 @@
   margin: 0 auto;
   object-fit: contain;
 }
+    /* hero image container: no border/padding/shadow */
+.panel.hero-photo {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* hero image sizing */
+.panel.hero-photo .hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 320px;   /* adjust this number if you want it taller/shorter */
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 12px; /* keep or remove if you want square corners */
+}
+
     .illus{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
     .row{display:flex;gap:12px;flex-wrap:wrap}
     .cred{display:flex;gap:12px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:14px;margin-top:6px}
@@ -130,10 +149,10 @@
         <div class="cred" aria-label="credibility">
         </div>
       </div>
-     <div class="panel">
+ <div class="panel hero-photo">
   <img class="hero-img" src="Hero-tech.png" alt="ARZA.AI—innovative real-estate tech preview">
 </div>
-    </div>
+
   </section>
 
   <section id="about" class="wrap center">
